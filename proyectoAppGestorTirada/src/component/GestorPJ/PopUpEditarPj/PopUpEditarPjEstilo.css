@@ -1,0 +1,67 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popUpEditarPj {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: rgb(233, 225, 181);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 1200px;
+    height: 800px;
+    gap: 25px;
+}
+
+.tituloEditarPersonaje { 
+    grid-area: 1 / 1 / 2 / 6; 
+    text-align: center;
+}
+.datosBasicosPersonajeJugador { 
+    grid-area: 2 / 1 / 7 / 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.puntuacionDeCaracteristicasPersonajeJugador { 
+    grid-area: 2 / 2 / 8 / 3; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.puntosDeVidaMaximoJugador { grid-area: 2 / 3 / 3 / 4; }
+.puntosDeVidaActualJugador { grid-area: 2 / 4 / 3 / 5; }
+.iniciativaJugador { grid-area: 2 / 5 / 3 / 6; }
+.informacionAdicionalJugador { grid-area: 3 / 3 / 6 / 6; }
+.agregarFoto { grid-area: 6 / 3 / 8 / 6; }
+.botonEnviar { grid-area: 8 / 2 / 9 / 3; }
+.botonesclose { grid-area: 8 / 4 / 9 / 5; }
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputGroup textarea {
+    height: 250px;
+    resize: none;
+}
+
+.inputGroup input, textarea {
+    border-radius: 10px;
+}

@@ -1,0 +1,25 @@
+.gestorPJPadre {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.botonPrincipal {
+    grid-area: 1 / 2 / 2 / 5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+}
+
+.cuerpoGestorPj {
+    grid-area: 2 / 1 / 3 / 6; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-left: 45px;
+    overflow-y: auto;
+    max-height: 80vh;
+}
